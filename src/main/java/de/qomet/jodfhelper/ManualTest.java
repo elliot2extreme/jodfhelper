@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Copyright (c) 2009 Softwareschmiede Höffl GmbH
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ * 	 Markus Buch - initial API and implementation
+ *******************************************************************************/
+
 package de.qomet.jodfhelper;
 
 import javax.xml.xpath.XPath;
@@ -11,18 +23,10 @@ import de.qomet.jodfhelper.odf.OdfDocumentHelperFactory;
 
 public class ManualTest {
 
-	final static String desktop = "C:\\Dokumente und Einstellungen\\Markus\\"
+	final static String desktop = "C:\\Dokumente und Einstellungen\\user\\"
 			+ "Desktop\\jOdfHelper Testdokumente\\";
 
-	// final static String desktop =
-	// "C:\\Users\\stefan.SOFTWARESCHMIED\\Desktop\\";
-
 	public static void main(String[] args) {
-		// File log4jCfg = new File("log4j_cfg.xml");
-		// if (log4jCfg.exists()) {
-		// DOMConfigurator.configure(log4jCfg.getAbsolutePath());
-		// }
-
 		if (args != null && args.length > 0) {
 			if (args[0].equalsIgnoreCase("stresstest"))
 				new ManualTest().stressTest();

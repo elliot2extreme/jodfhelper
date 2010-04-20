@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Copyright (c) 2009 Softwareschmiede Höffl GmbH
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ * 	 Markus Buch - initial API and implementation
+ *******************************************************************************/
+
 package de.qomet.jodfhelper.odf.text;
 
 import org.odftoolkit.odfdom.OdfFileDom;
@@ -14,8 +26,7 @@ class OdfListNodeHandler implements INodeHandler {
 	private final OdfFileDom contentDom;
 	private final OdfTextList srcNode;
 
-	OdfListNodeHandler(OdfFileDom contentDom,
-			final OdfTextList srcNode) {
+	OdfListNodeHandler(OdfFileDom contentDom, final OdfTextList srcNode) {
 		this.contentDom = contentDom;
 		this.srcNode = srcNode;
 	}
